@@ -1,0 +1,19 @@
+.catalog-modal {
+	
+	// .catalog-modal__list
+	&__list {
+
+		padding: 0;
+	}
+
+	// .catalog-modal__item
+	&__item {
+		margin: 15px 0;
+
+		a {
+			font-size: 22px;
+			font-weight: 500;
+			color: #000;
+		}
+	}
+}

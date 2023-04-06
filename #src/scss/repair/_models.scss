@@ -1,0 +1,117 @@
+.models {
+	// .models__title-wrapper
+
+	&__title-wrapper {
+		margin: 0 0 60px 0;
+
+		@media (max-width: 599.98px) {
+			margin: 0 0 45px 0;
+		}
+
+		@media (max-width: 359.98px) {
+			margin: 0 0 35px 0;
+		}
+	}
+
+	// .models__title
+	&__title {
+		margin: 0 0 66px 0;
+		position: relative;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
+
+		@media (max-width: 599.98px) {
+			margin: 0;
+			font-size: 18px;
+		}
+
+		@media (max-width: 359.98px) {
+			font-size: 16px;
+		}
+	}
+
+	// .models__arrows
+	&__arrows {
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 38px;
+			height: 41px;
+			background: url(../images/arrows.svg) no-repeat;
+			background-size: contain;
+			top: 36px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@media (max-width: 599.98px) {
+				width: 20px;
+				height: 21px;
+			}
+
+			@media (max-width: 359.98px) {
+				top: 24px;
+			}
+		}
+	}
+
+	// .models__row
+	&__row {
+
+		@media (max-width: 499.98px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	// .models__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -25px;
+
+		@media (max-width: 997.98px) { margin: 0 -20px; }
+		@media (max-width: 699.98px) { margin: 0 -15px; }
+		@media (max-width: 499.98px) { margin: 0 -10px; }
+
+	}
+
+	// .models__item
+	&__item {
+		flex: 0 0 20%;
+		margin-bottom: 35px;
+		padding: 0 25px;
+
+		@media (max-width: 1179.98px) { flex-basis: 25%; }
+		@media (max-width: 997.98px) { flex-basis: 33.333%; margin-bottom: 30px; padding: 0 20px;}
+		@media (max-width: 699.98px) { flex-basis: 33.333%; margin-bottom: 25px; padding: 0 15px;}
+		@media (max-width: 499.98px) { flex-basis: 50%; padding: 0 10px; }
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 80px;
+			font-size: 18px;
+			font-weight: 700;
+			text-align: center;
+			color: #333;
+			background: rgba(255, 255, 255, 0.5);
+			border: 2px solid rgba(51, 51, 51, 0.25);
+
+			&:hover {
+				background-color: #fff;
+				border: 2px solid rgba(51, 51, 51, 0.75);
+			}
+
+			@media (max-width: 997.98px) { height: 70px; }
+			@media (max-width: 1069.98px) { font-size: 15px; }
+			@media (max-width: 599.98px) { font-size: 14px; }
+		}
+
+	}
+}

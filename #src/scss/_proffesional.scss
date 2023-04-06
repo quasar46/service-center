@@ -1,0 +1,146 @@
+.professional {
+	margin-bottom: 16px;
+
+	// .professional__nav
+	&__nav {
+		display: flex;
+
+		@media (max-width: 426.98px) {
+			flex-direction: column;
+		}
+	}
+
+	// .professional__tab-button
+
+	&__tab-button {
+		width: 400px;
+		height: 100px;
+		padding: 10px;
+		font-size: 20px;
+		font-weight: 700;
+		color: #777;
+		background: #e9e9e9;
+		border: 1px solid rgba(200, 200, 200, 0.48);
+
+		@media (max-width: 1067.98px) {
+			font-size: 16px;
+		}
+
+		@media (max-width: 875.98px) {
+			height: 60px;
+			font-size: 14px;
+			padding: 5px;
+		}
+
+		@media (max-width: 625.98px) {
+			font-size: 12px;
+		}
+
+		@media (max-width: 426.98px) {
+			width: 100%;
+		}
+
+		&--active {
+			color: #000;
+			background-color: #fff;
+			border-bottom: transparent;
+		}
+	}
+
+	// .professional__body
+
+	&__body {
+	}
+
+	// .professional__tab
+
+	&__tab {
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	// .professional__row
+
+	&__row {
+		display: flex;
+		background-color: #fff;
+
+		@media (max-width: 875.98px) {
+			flex-direction: column;
+		}
+	}
+
+	// .professional__img-wrapper
+
+	&__img-wrapper {
+		flex: 0 0 385px;
+		width: 385px;
+		height: 262px;
+		object-fit: cover;
+
+		@media (max-width: 875.98px) {
+			flex: 0 0 263px;
+		}
+
+		@media (max-width: 426.98px) {
+			flex: 0 0 236px;
+			width: 275px;
+		}
+
+		img {
+			@media (max-width: 426.98px) {
+				object-fit: cover;
+			}
+		}
+	}
+
+	// .professional__content
+
+	&__content {
+		min-height: 260px;
+		padding: 22px 15px 15px 21px;
+
+		@media (max-width: 875.98px) {
+			min-height: 160px;
+		}
+
+		@media (max-width: 365.98px) {
+			padding: 10px;
+		}
+	}
+
+	// .professional__headline
+
+	&__headline {
+		margin: 25px 0 0 0;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 29px;
+		color: #000;
+
+		@media (max-width: 875.98px) {
+			margin: 0;
+			font-size: 18px;
+		}
+	}
+
+	// .professional__text-wrapper
+
+	&__text-wrapper {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+		color: #000;
+
+		@media (max-width: 875.98px) {
+			font-size: 14px;
+		}
+
+		p {
+			margin: 12px 0 0 0;
+		}
+	}
+}

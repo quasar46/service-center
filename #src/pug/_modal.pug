@@ -1,0 +1,74 @@
+.modal
+	.modal__table(data-vktarget="nav")
+		.modal__table-cell
+			.modal__container.nav-modal
+				.modal__content.nav-modal__content
+					button.modal__close Закрыть
+
+					nav.nav-modal__nav
+						ul.nav-modal__list
+							li.nav-modal__item
+								a(href="#") О компании
+							li.nav-modal__item
+								a(href="#") Доставка
+							li.nav-modal__item
+								a(href="#") Отзывы
+							li.nav-modal__item
+								a(href="#") Контакты
+
+					ul.nav-modal__social-list
+						li.nav-modal__social-item
+							a(href="#")
+								img.nav-modal__social-logo(src="assets/images/telegram.svg", alt="")
+						li.nav-modal__social-item
+							a(href="#")
+								img.nav-modal__social-logo(src="assets/images/instagram.svg", alt="")
+						li.nav-modal__social-item
+							a(href="#")
+								img.nav-modal__social-logo(src="assets/images/whatapp.svg", alt="")
+
+					.nav-modal__phone-wrapper
+						a(href="+79957965304") +7 995 796-53-04
+						button.nav-modal__phone-button(data-vkpath="call") Заказать звонок
+
+	.modal__table(data-vktarget="catalog")
+		.modal__table-cell
+			.modal__container.catalog-modal
+				.modal__content.catalog-modal__content
+					button.modal__close Закрыть
+
+					nav.catalog-modal__nav
+						ul.catalog-modal__list
+							li.catalog-modal__item
+								a(href="#") Бытовая техника
+							li.catalog-modal__item
+								a._active(href="#") Цифровая техника
+							li.catalog-modal__item
+								a(href="#") Кухонная техника
+							li.catalog-modal__item
+								a(href="#") Лодочные электромоторы
+							li.catalog-modal__item
+								a(href="#") Электроинструменты
+							li.catalog-modal__item
+								a(href="#") Установка техники
+
+	.modal__table(data-vktarget="call")
+		.modal__table-cell
+			.modal__container.call-modal
+				.modal__content.call-modal__content
+					button.modal__close Закрыть
+
+					form.call-modal__form(action="#" method="post")
+						label.call-modal__label
+							span.call-modal__label-text Ваше имя
+								span.call-modal__required *
+							input(type="text" placeholder="Ваше имя")
+						label.call-modal__label
+							span.call-modal__label-text Телефон
+								span.call-modal__required *
+							input(type="text" placeholder="+7 (___) ___-__-__")
+						.call-modal__submit-wrapper
+							button.call-modal__submit(type="submit") Заказать звонок
+
+
+.modal2

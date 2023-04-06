@@ -1,0 +1,116 @@
+.main-screen {
+	margin: 0 0 25px 0;
+	background: center/cover url(../images/main-screen-bg.jpg) no-repeat;
+
+	// .main-screen__wrapper
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 85px 0 40px 0;
+
+		@media (max-width: 1089.98px) {
+			padding: 30px 0 20px 0;
+		}
+
+	}
+
+	// .main-screen__headline
+	&__headline {
+		margin: 0 0 5px 0;
+		font-size: 24px;
+		font-weight: 400;
+		color: #fff;
+		text-align: center;
+
+		@media (max-width: 668.98px) {
+			font-size: 18px;
+		}
+
+		@media (max-width: 510.98px) {
+			font-size: 14px;
+		}
+	}
+
+	// .main-screen__title
+	&__title {
+		margin: 0;
+		font-size: 48px;
+		font-weight: 700;
+		text-align: center;
+		color: #fff;
+
+		@media (max-width: 668.98px) {
+			font-size: 35px;
+		}
+
+		@media (max-width: 510.98px) {
+			font-size: 21px;
+		}
+
+		strong {
+			color: #f0f405;
+		}
+	}
+
+	// .main-screen__search-wrapper
+	&__search-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin: 60px 0 45px 0;
+
+		@media (max-width: 998.98px) { justify-content: center; }
+		@media (max-width: 668.98px) { margin: 45px 0; }
+		@media (max-width: 588.98px) { flex-direction: column; width: 100%; }
+		@media (max-width: 510.98px) { margin: 30px 0; }
+
+		label {
+			margin: 0 22px 20px 0;
+
+			@media (max-width: 588.98px) {
+				width: 100%;
+				margin: 0 0 20px 0;
+			}
+		}
+	}
+
+	// .main-screen__input
+	&__input {
+		width: 234px;
+		height: 40px;
+		padding: 10px 35px 10px 15px;
+		border-radius: 5px;
+		border: none;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 16px;
+		color: #333;
+		background: calc(100% - 15px) center/18px 18px url(../images/search-1.svg) no-repeat rgb(216, 216, 216);
+
+		&--two { width: 270px; }
+		&--three { width: 170px; }
+
+		@media (max-width: 588.98px) {
+			width: 100%;
+		}
+	}
+
+	// .main-screen__button
+	&__button {
+		width: 205px;
+		min-height: 40px;
+		background: linear-gradient(180deg, #f0f405 0%, #a1a500 263.08%), #ede300;
+		border-radius: 5px;
+		border: none;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		color: #333;
+
+		@media (max-width: 588.98px) {
+			width: 100%;
+		}
+	}
+}

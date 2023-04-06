@@ -1,0 +1,296 @@
+.contacts {
+	margin: 35px 0 0 0;
+
+	// .contacts__row
+	&__row {
+		margin: 10px 0 0 0;
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 1189.98px) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
+
+	// .contacts__row-two
+	&__row-two {
+		margin-bottom: 44px;
+	}
+
+	// .contacts__map
+	&__map {
+		iframe {
+			height: 100%;
+
+			@media (max-width: 1189.98px) {
+				width: 1100px;
+				height: 500px;
+			}
+
+			@media (max-width: 1104.98px) {
+				width: 1000px;
+			}
+
+			@media (max-width: 1014.98px) {
+				width: 900px;
+			}
+
+			@media (max-width: 914.98px) {
+				width: 800px;
+			}
+
+			@media (max-width: 814.98px) {
+				width: 700px;
+			}
+
+			@media (max-width: 714.98px) {
+				width: 600px;
+			}
+
+			@media (max-width: 614.98px) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	// .contacts__info
+	&__info {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin: 0 0 0 44px;
+		padding: 30px 20px;
+		background-color: #fff;
+		width: 576px;
+		min-height: 500px;
+
+		@media (max-width: 1189.98px) {
+			margin: 0 0 40px 0;
+		}
+
+		@media (max-width: 579.98px) {
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
+	// .contacts__logo-wrapper
+	&__logo-wrapper {
+		display: flex;
+		align-items: flex-start;
+		margin: 0;
+	}
+
+	// .contacts__logo
+	&__logo {
+		width: 91px;
+		height: 43px;
+		object-fit: cover;
+	}
+
+	// .contacts__logo-content
+	&__logo-content {
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 0 14px;
+	}
+	// .contacts__logo-name
+	&__logo-name {
+		margin: 0 0 5px 0;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+
+	// .contacts__logo-text
+	&__logo-text {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 15px;
+	}
+
+	// contacts__title-wrapper
+	&__title-wrapper {
+		display: flex;
+		align-items: center;
+
+		// .contacts__title-wrapper--mt
+		&--mt {
+			margin-top: 5px;
+		}
+
+		// .contacts__title-wrapper--mb
+		&--mb {
+			margin-bottom: 5px;
+		}
+	}
+
+	// .contacts__title
+	&__title {
+		margin: 0;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+	}
+
+	// .contacts__pay-wrapper
+	&__pay-wrapper {
+		margin: 10px 0 37px 0;
+	}
+
+	// .contacts__pay
+	&__pay {
+		width: 56px;
+		height: 36px;
+		object-fit: contain;
+
+		&:not(:last-child) {
+			margin: 0 13px 0 0;
+		}
+	}
+
+	// .contacts__column
+
+	&__column {
+		&:last-child {
+			margin-left: 10px;
+			flex: 0 0 267px;
+
+			@media (max-width: 579.98px) {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	// .contacts__call-wrapper
+
+	&__call-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 28px;
+	}
+
+	// .contacts__call-icon
+
+	&__icon {
+		margin: 0 10px 0 0;
+	}
+
+	// .contacts__call
+
+	&__call {
+		margin: 4px 0 4px 23px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		text-decoration: none;
+		color: #333;
+	}
+
+	// .contacts__address-wrapper
+
+	&__address-wrapper {
+		margin-bottom: 40px;
+	}
+
+	// .contacts__inform
+
+	&__inform {
+		display: block;
+		margin: 0;
+		padding-left: 20px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 15px;
+		color: #333;
+
+		// .contacts__inform--pl0
+		&--pl0 {
+			padding-left: 0;
+		}
+	}
+
+	// .contacts__time-wrapper
+
+	&__time-wrapper {
+		margin-bottom: 35px;
+	}
+
+	// .contacts__metro
+
+	&__metro {
+		margin-bottom: 40px;
+		padding-left: 25px;
+
+		@media (max-width: 579.98px) {
+			padding: 0;
+		}
+	}
+
+	// .contacts__metro-wrapper
+
+	&__metro-wrapper {
+		margin: 9px 0 18px 0;
+	}
+
+	// .contacts__adress
+
+	&__adress {
+		display: inline-block;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+
+	// .contacts__bus
+
+	&__bus {
+		padding-left: 25px;
+
+		@media (max-width: 579.98px) {
+			padding: 0;
+		}
+	}
+
+	// .contacts__bus-wrapper
+
+	&__bus-wrapper {
+		margin: 7px 0 16px 0;
+
+		.contacts__icon {
+			margin: 0 10px 0 3px;
+		}
+	}
+}
+
+.delivery-page {
+	.contacts {
+		margin: 14px 0 50px 0;
+	}
+}
+
+.reviews-page {
+	.contacts {
+		margin: 30px 0 50px 0;
+	}
+}
+
+.contacts-page {
+	.contacts {
+		margin: 19px 0 50px 0;
+	}
+}
+
+.price-page {
+	.contacts {
+		margin: 30px 0 50px 0;
+	}
+}
+
+.repair-page {
+	.contacts {
+		margin: 30px 0 50px 0;
+	}
+}

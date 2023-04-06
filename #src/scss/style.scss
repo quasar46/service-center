@@ -1,0 +1,105 @@
+@import "_fonts";
+@import "_normalize";
+
+@import "header/header";
+@import "header/top-nav";
+@import "header/modal-menu";
+@import "header/modal-menu-top";
+
+@import "repair/screen-repair";
+@import "repair/models";
+@import "repair/proffesional-service";
+
+@import "price/repair-price";
+@import "price/malfunctions";
+
+@import "main-screen";
+@import "main-page/advantages";
+@import "repair";
+
+@import "proffesional";
+@import "sale";
+@import "question";
+@import "form-question";
+
+@import "contacts/_contacts";
+
+@import "feed";
+@import "footer";
+@import "reviews";
+
+@import "modal/modal";
+@import "modal/nav";
+@import "modal/catalog";
+@import "modal/call";
+
+.container {
+	max-width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 1.25;
+	font-weight: 400;
+	color: #333;
+	background-color: #e9e5e5;
+}
+
+button {
+	cursor: pointer;
+}
+
+.main-title {
+	display: flex;
+	margin: 30px 0;
+	font-size: 30px;
+
+	@media (max-width: 949.98px) {
+		flex-direction: column;
+		align-items: center;
+		margin: 30px 0 50px 0;
+		text-align: center;
+	}
+	@media (max-width: 579.98px) { font-size: 22px; }
+	@media (max-width: 416.98px) { margin: 20px 0 50px 0; font-size: 17px;}
+
+	// .main-title__title
+	&__title {
+		max-width: 680px;
+		margin: 0 22px 0 2px;
+		font-size: 30px;
+		font-weight: 700;
+		color: #333;
+
+		@media (max-width: 949.98px) { margin: 0; }
+		@media (max-width: 579.98px) { font-size: 22px; }
+		@media (max-width: 416.98px) { font-size: 17px; }
+	}
+
+	// .main-title__line-grey
+	&__line-grey {
+		position: relative;
+		top: 0.6em;
+		display: block;
+		width: 370px;
+		height: 5px;
+		background-color: #dcdcdc;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70px;
+			height: 5px;
+			background-color: #f4f900;
+		}
+
+		@media (max-width: 416.98px) { width: 100%; }
+	}
+
+}

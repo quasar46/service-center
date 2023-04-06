@@ -1,0 +1,50 @@
+section.main-screen 
+	.container 
+		.main-screen__wrapper
+			p.main-screen__headline Сеть сервисных центров
+			h1.main-screen__title 
+				strong Ремонт 
+				| бытовой <br> техники и электроники
+			
+			form.main-screen__search-wrapper(action="#")
+				label
+					span.visually-hidden Ваше устройство
+					input.main-screen__input(type="text", name="", placeholder="Ваше устройство")
+				label
+					span.visually-hidden Что случилось с устройством
+					input.main-screen__input.main-screen__input--two(type="text", name="", placeholder="Что случилось с устройством")
+				label
+					span.visually-hidden Ваш город
+					input.main-screen__input.main-screen__input--three(type="text", name="", placeholder="Ваш город")
+				button.main-screen__button(type="submit") Получить консультацию
+
+			.main-screen__advantages.advantages
+				.advantages__element 
+					.advantages__headline-wrapper
+						img.advantages__logo(src="assets/images/time.svg", alt="")
+						p.advantages__headline срочный ремонт
+					.advantages__list 
+						p.advantages__info - Ремонт за 1 час
+						p.advantages__info - Срочная диагностика
+						p.advantages__info - Ремонт в Вашем присутствии
+				.advantages__element 
+					.advantages__headline-wrapper
+						img.advantages__logo(src="assets/images/winner.svg", alt="")
+						p.advantages__headline КАЧЕСТВО
+					.advantages__list
+						p.advantages__info - Оригинальные детали
+						p.advantages__info - Оплата по факту
+				.advantages__element 
+					.advantages__headline-wrapper
+						img.advantages__logo(src="assets/images/mony.svg", alt="")
+						p.advantages__headline СПОСОБЫ ОПЛАТЫ
+					.advantages__list
+						p.advantages__info - Оплата картой
+						p.advantages__info - Оплата через банк
+						p.advantages__info - Рассрочка и кредит
+				.advantages__element 
+					.advantages__headline-wrapper
+						img.advantages__logo(src="assets/images/car.svg", alt="")
+						p.advantages__headline ДОСТАВКА
+					.advantages__list 
+						p.advantages__info - Курьерская служба

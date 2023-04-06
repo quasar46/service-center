@@ -1,0 +1,160 @@
+.top-nav {
+	position: relative;
+	z-index: 1;
+	background-color: #ccd000;
+
+	// .top-nav__row
+	&__row {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		min-height: 43px;
+
+		@media (max-width: 997.98px) {
+			justify-content: space-between;
+		}
+	}
+
+	// .top-nav__menu-open
+	&__menu-open {
+		display: none;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		background: transparent;
+		border: none;
+
+		span,
+		&:before,
+		&:after {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: #000;
+		}
+
+		span {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:before {
+			content: '';
+			top: 4px;
+		}
+
+		&:after {
+			content: '';
+			bottom: 4px;
+		}
+
+		@media (max-width: 997.98px) { display: block; }
+	}
+
+
+	// .top-nav__nav
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .top-nav__list
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 1017.98px) {
+			display: none;
+		}
+	}
+
+	// .top-nav__item
+
+	&__item {
+		margin-right: 14px;
+
+		@media (max-width: 1156.98px) {
+			margin-right: 5px;
+		}
+
+		a {
+			position: relative;
+			padding: 8px 22px 8px 5px;
+			font-size: 12px;
+			font-weight: 700;
+			color: #333333;
+			text-decoration: none;
+
+			@media (max-width: 1239.98px) {
+				padding: 8px 19px 8px 5px;
+				font-size: 11px;
+			}
+
+			@media (max-width: 1156.98px) {
+				padding: 8px 17px 8px 5px;
+			}
+
+			@media (max-width: 1095.98px) {
+				padding: 8px 5px;
+			}
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 1px;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 11px;
+				background: center/contain url(../images/arrow-menu.svg) no-repeat;
+
+				@media (max-width: 1239.98px) {
+					width: 15px;
+					height: 10px;
+				}
+
+				@media (max-width: 1156.98px) {
+					width: 13px;
+					height: 9px;
+				}
+
+				@media (max-width: 1095.98px) {
+					display: none;
+				}
+			}
+
+			&._active {
+				&:after {
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+		}
+	}
+
+	// .top-nav__link
+
+	&__link {
+	}
+
+	// .top-nav__diagnostics
+
+	&__diagnostics {
+		height: 30px;
+		padding: 5px 12px;
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 12px;
+		color: #d6da14;
+		background-color: #333;
+		border: none;
+		border-radius: 5px;
+	}
+}

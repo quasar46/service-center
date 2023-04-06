@@ -1,0 +1,168 @@
+.form-question {
+	margin: 30px 124px 0 0px;
+
+	@media (max-width: 1169.98px) {
+		margin: 30px 0px 0 0px;
+	}
+
+	// .form-question__wrapper
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 420px;
+		min-height: 330px;
+		background: linear-gradient(180deg, #707070 0%, #464646 127.59%);
+		box-shadow: 2px 14px 20px -2px rgba(0, 0, 0, 0.25);
+
+		@media (max-width: 485.98px) {
+			width: 100%;
+			padding: 0px 10px;
+		}
+	}
+
+	// .form-question__title
+
+	&__title {
+		margin: 0 0 32px 0;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		color: #fcfcfc;
+	}
+
+	//.form-question__wrapper-form
+
+	&__wrapper-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		@media (max-width: 485.98px) {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	// .form-question__label
+
+	&__label {
+	}
+
+	// .form-question__input-text
+
+	&__input-text {
+		width: 390px;
+		height: 46px;
+		margin: 0 0 20px 0;
+		padding: 0 15px;
+
+		&::placeholder {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 22px;
+			color: rgba(107, 107, 107, 0.5);
+		}
+
+		@media (max-width: 485.98px) {
+			width: 100%;
+		}
+	}
+
+	// .form-question__submit
+
+	&__submit {
+		width: 225px;
+		min-height: 46px;
+		margin: 20px 0 0 0;
+		padding: 5px 10px;
+		font-size: 18px;
+		font-weight: 500;
+		color: #000;
+		background: linear-gradient(180deg, #f0f405 0%, #d5da00 100%);
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.25);
+		border: none;
+
+		@media (max-width: 485.98px) {
+			width: 100%;
+		}
+	}
+}
+
+.contacts-page {
+	.form-question {
+		margin: 51px 126px 0 0px;
+
+		@media (max-width: 1169.98px) {
+			margin: 51px 0px 0 0px;
+		}
+
+		@media (max-width: 485.98px) {
+			margin: 30px 0 0 0;
+			width: 100%;
+		}
+		// .form-question__wrapper
+
+		&__wrapper {
+			padding: 30px 0 19px 0;
+			box-shadow: 2px 14px 20px -2px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+
+			@media (max-width: 485.98px) {
+				width: 100%;
+				padding: 30px 10px 19px 10px;
+			}
+		}
+
+		//.form-question__title
+
+		&__title {
+			margin: 0 0 13px 0;
+		}
+
+		//.form-question__input-text
+
+		&__input-text {
+			margin: 0 0 15px 0;
+		}
+
+		//.form-question__submit
+
+		&__submit {
+			margin: 0;
+		}
+	}
+}
+
+.delivery-page {
+	.form-question {
+		margin: 22px 125px 0 0;
+
+		@media (max-width: 1169.98px) {
+			margin: 22px 0px 0 0px;
+		}
+	}
+}
+
+.repair-page {
+	.form-question {
+		margin: 24px 128px 0 0px;
+
+		@media (max-width: 1169.98px) {
+			margin: 24px 0 0 0;
+		}
+	}
+}
+
+.price-page {
+	.form-question {
+		margin: 24px 128px 0 0px;
+
+		@media (max-width: 1169.98px) {
+			margin: 24px 0 0 0;
+		}
+	}
+}

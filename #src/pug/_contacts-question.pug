@@ -1,0 +1,27 @@
+section.question
+	.container 
+		.question__row 
+			.question__info
+				h2.question__title <strong>Оставтье заявку</strong> на ремонт <br> своей техники
+				p.question__subtitle И мы с вами свяжемся <br> в ближайшее время
+
+			.question__form.form-question 
+				.form-question__wrapper
+					h3.form-question__title Заполните форму
+					form.form-question__wrapper-form(action="#")
+						label.form-question__label
+							span.visually-hidden Вид техники
+							input.form-question__input-text(type="text" placeholder="Вид техники")
+						label.form-question__label
+							span.visually-hidden Модель
+							input.form-question__input-text(type="text" placeholder="Модель")
+						label.form-question__label
+							span.visually-hidden Что случилось
+							input.form-question__input-text(type="text" placeholder="Что случилось")
+						label.form-question__label
+							span.visually-hidden Ваш номер телефона
+							input.form-question__input-text(type="text" placeholder="Ваш номер телефона")
+						label.form-question__label
+							span.visually-hidden Ваш e-mail
+							input.form-question__input-text(type="text" placeholder="Ваш e-mail")
+						button.form-question__submit(type="submit") Отправить заявку

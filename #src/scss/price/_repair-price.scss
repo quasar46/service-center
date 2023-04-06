@@ -1,0 +1,120 @@
+.repair-price {
+	margin: 50px 0 30px 0;
+
+	// .repair-price__table
+	&__table {
+		display: grid;
+		grid-template-columns: 5.5fr 2.2fr 2fr 2fr 3fr;
+		grid-gap: 1px;
+		background: rgba(51, 51, 51, 0.45);
+		border: 1px solid rgba(51,51,51,0.45);
+
+		@media (max-width: 699.98px) {
+			grid-template-columns: 5.5fr 2.2fr 2fr 2fr 2fr;
+		}
+
+		div {
+			display: flex;
+			align-items: center;
+			min-height: 44px;
+			padding: 5px 30px;
+			font-size: 14px;
+			font-weight: 400;
+			color: #000;
+
+			@media (max-width: 1099.98px) {
+				padding: 5px 10px;
+			}
+
+			@media (max-width: 813.98px) {
+				font-size: 13px;
+			}
+
+			@media (max-width: 767.98px) {
+				min-height: 40px;
+				padding: 5px;
+			}
+
+			@media (max-width: 699.98px) {
+				min-height: 5.7vw;
+				padding: 0.7vw;
+				font-size: 1.86vw;
+			}
+		}
+	}
+
+	// .repair-price__name
+	&__name {
+		background: #fff;
+		&--grey {
+			background: #dddddd;
+		}
+	}
+
+	// .repair-price__price
+	&__price {
+		background: #fff;
+		&--grey {
+			background: #dddddd;
+		}
+	}
+
+	// .repair-price__time
+	&__time {
+		background: #fff;
+		&--grey {
+			background: #dddddd;
+		}
+	}
+
+	// .repair-price__guarantee
+	&__guarantee {
+		background: #fff;
+		&--grey {
+			background: #dddddd;
+		}
+	}
+
+	// .repair-price__null
+	&__null {
+		display: flex;
+		justify-content: center;
+
+		background: #fff;
+		&--grey {
+			background: #dddddd;
+		}
+	}
+
+	// .repair-price__order
+	&__order {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		padding-right: 25px;
+		background-color: #fff;
+		border: none;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			top: 50%;
+			right: 5px;
+			transform: translateY(-50%);
+			background: center/contain url(../images/arrows-price.svg) no-repeat;
+
+		}
+
+		@media (max-width: 699.98px) {
+			padding: 1vw;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}

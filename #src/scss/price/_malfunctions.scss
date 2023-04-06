@@ -1,0 +1,58 @@
+.malfunctions {
+	margin: 0 0 50px 0;
+
+	// .malfunctions__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -8px;
+		padding: 0;
+	}
+
+	// .malfunctions__item
+	&__item {
+		flex: 0 0 25%;
+		padding: 8px;
+
+		@media (max-width: 997.98px) {
+			flex-basis: 33.333%;
+		}
+		@media (max-width: 767.98px) {
+			flex-basis: 50%;
+		}
+		@media (max-width: 499.98px) {
+			flex-basis: 100%;
+		}
+	}
+
+	// .malfunctions__link
+	&__link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		min-height: 80px;
+		background-color: #ffffff;
+		border: 1px solid rgba(51, 51, 51, 0.45);
+	}
+
+	// .malfunctions__headline
+	&__headline {
+		font-size: 16px;
+		font-weight: 700;
+		color: #333;
+		text-align: center;
+	}
+
+	// .malfunctions__price
+	&__price {
+		font-size: 16px;
+		font-weight: 400;
+		color: #333;
+	}
+
+}
+
+
+

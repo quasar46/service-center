@@ -1,0 +1,150 @@
+.modal {
+	--transition-time: 0.3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3000;
+	background: rgba(33, 33, 33, 0.3);
+	backdrop-filter: blur(24px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity var(--transition-time), visibility var(--transition-time);
+	}
+
+	// .modal__table
+	&__table {
+		display: none;
+		width: 100%;
+		height: 100%;
+		&.modal-open {
+			display: table;
+		}
+
+	}
+
+	// .modal__table-cell
+	&__table-cell {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100vh;
+		padding: 50px 0;
+
+		&--top {
+			vertical-align: top;
+		}
+
+		@media (max-width: 1023.98px) {
+			padding: 0;
+		}
+	}
+
+	// .modal__container
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 50px 0;
+		cursor: default;
+	}
+
+	// .modal__content
+	&__content {
+		position: relative;
+		width: 80%;
+		min-width: 100px;
+		min-height: 50px;
+		padding: 40px 20px;
+		background-color: #fff;
+	}
+
+	// .modal__close
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 30px;
+		height: 30px;
+		margin: 0;
+		padding: 0;
+		background: center/30px 30px url(../images/modal/close.svg) no-repeat transparent;
+		font-size: 0;
+		border: none;
+		cursor: pointer;
+	}
+}
+
+.modal2 {
+	--transition-time: 0.3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1999;
+	background: rgba(33, 33, 33, 0.3);
+	backdrop-filter: blur(24px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity var(--transition-time), visibility var(--transition-time);
+	}
+
+	&__wrapper {
+		display: none;
+		&.modal-open {
+			display: block;
+		}
+	}
+
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity var(--transition-time);
+}
+
+.fade.animate-open {
+	opacity: 1;
+	transition: opacity var(--transition-time);
+}
+
+.fadeInUp {
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
